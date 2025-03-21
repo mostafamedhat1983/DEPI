@@ -41,7 +41,7 @@ services:
     networks:
       - backend
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pmy-secret-pw"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p my-secret-pw"]
       interval: 10s
       timeout: 5s
       retries: 10
